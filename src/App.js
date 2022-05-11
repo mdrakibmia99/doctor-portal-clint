@@ -6,12 +6,11 @@ import ContactUs from './routes/ContactUs/ContactUs';
 import Home from './routes/Home/Home';
 import Login from './routes/Login/Login';
 import Reviews from './routes/Reviews/Reviews';
-import Footer from './shared/Footer/Footer';
 import Navbar from './shared/Navbar/Navbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="">
       <Navbar />
 
       <Routes>
@@ -23,8 +22,6 @@ function App() {
         <Route path='/contactUs' element={<ContactUs />} />
         <Route path='/login' element={<Login />} />
       </Routes>
-
-      <Footer />
     </div>
   );
 }

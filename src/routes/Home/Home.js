@@ -3,19 +3,20 @@ import Banner from './Banner';
 import AppointmentInfo from './AppointmentInfo';
 import Services from './Services';
 import DentalCare from './DentalCare';
-import Appointment from './Appointment';
 import Testimonial from './Testimonial';
 import ContactUs from './ContactUs';
+import Footer from '../../shared/Footer/Footer';
+import MakeAppointment from './MakeAppointment';
 
 
 const Home = () => {
 
- 
-   
-    
+
+
+
 
     return (
-        <div className=''>
+        <div className='max-w-7xl mx-auto'>
             {/* hero section start  */}
             <Banner></Banner>
 
@@ -23,20 +24,22 @@ const Home = () => {
             <AppointmentInfo></AppointmentInfo>
 
             {/* service section start */}
-           <Services></Services>
+            <Services></Services>
 
-           {/* dental care section  */}
-           <DentalCare></DentalCare>
+            {/* dental care section  */}
+            <DentalCare></DentalCare>
 
             {/* Appointment section start  */}
-            <Appointment></Appointment>
-          
+            <MakeAppointment></MakeAppointment>
+
             {/* testimonial section  */}
             <Testimonial></Testimonial>
 
-
             {/* contact us section start  */}
             <ContactUs></ContactUs>
+
+            {/* footer section  */}
+            <Footer></Footer>
 
         </div>
     );

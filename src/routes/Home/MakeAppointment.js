@@ -1,7 +1,7 @@
 import React from 'react';
 import doctorImg from '../../assets/images/doctor-small.png'
 import appointmentBG from '../../assets/images/appointment.png'
-const Appointment = () => {
+const MakeAppointment = () => {
     return (
         <div className='mt-36'>
         <div style={{ backgroundImage: `url(${appointmentBG})`}}>
@@ -20,4 +20,4 @@ const Appointment = () => {
     );
 };
 
-export default Appointment;
+export default MakeAppointment;
