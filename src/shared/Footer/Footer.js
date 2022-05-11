@@ -6,7 +6,7 @@ const Footer = () => {
     const today = new Date();
     const year = today.getFullYear();
     return (
-        <div style={{backgroundImage:`url(${footerBg})`,}} className='bg-contain '>
+        <div style={{backgroundImage:`url(${footerBg})`,}} className='bg-contain'>
             <footer className="footer p-10 text-neutral-content">
                 <div>
                     <span className="footer-title text-black">SERVICES</span>
