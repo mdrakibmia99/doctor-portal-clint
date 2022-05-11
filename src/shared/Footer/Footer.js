@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import footerBg from '../../assets/images/footer.png'
 
 const Footer = () => {
     const today = new Date();
     const year = today.getFullYear();
     return (
-        <div className="bg-white">
+        <div style={{backgroundImage:`url(${footerBg})`,}} className='bg-contain '>
             <footer className="footer p-10 text-neutral-content">
                 <div>
                     <span className="footer-title text-black">SERVICES</span>
@@ -14,7 +15,7 @@ const Footer = () => {
                     <Link to='/' className="link link-hover text-black">Weekly Checkup</Link>
                     <Link to='/' className="link link-hover text-black">Deep Checkup</Link>
                 </div>
-                <div>
+                <div  style={{backgroundImage:`url(${footerBg})`}}>
                     <span className="footer-title text-black">ORAL HEALTH</span>
                     <Link to='/' className="link link-hover text-black">Fluoride Treatment</Link>
                     <Link to='/' className="link link-hover text-black">Cavity Filling</Link>
