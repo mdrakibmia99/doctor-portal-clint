@@ -7,24 +7,24 @@ const AvailableAppointment = ({date}) => {
     const [services,setServices]=useState([])
     const [treatment,setTreatment]=useState(null);
     useEffect(()=>{
-        fetch('services.json')
+        fetch('https://desolate-spire-14959.herokuapp.com/services')
         .then(res=>res.json())
         .then(data =>setServices(data))
     },[])
-    console.log(services);
+
     return (
         <div>
             <p className='text-secondary text-xl text-center'>Available Appointments on {format(date,'PP')}</p>
            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 px-5'>
                {
-                   services.map(service =><Service
+                   services?.map(service =><Service
                    key={service._id}
                    service={service}
                    setTreatment={setTreatment}
                    ></Service>)
                }
            </div>
-           {treatment && <BookingModal treatment={treatment}></BookingModal>}
+           {treatment && <BookingModal treatment={treatment} setTreatment={setTreatment} date={date}></BookingModal>}
         </div>
     );
 };

@@ -13,11 +13,11 @@ const ContactUs = () => {
                 <input type="text" placeholder="Email Address" className="input w-full mb-3 " />
                 <input type="text" placeholder="Subject" className="input w-full mb-3" />
                 <textarea className="textarea w-full mb-3 h-40" placeholder="Your message"></textarea>
-                <button className="bg-gradient-to-r from-[#19D3AE] to-[#0FCFEC] px-5 py-2 rounded-lg uppercase text-white">Submit</button>
+                <button className="bg-gradient-to-r from-secondary to-primary px-5 py-2 rounded-lg uppercase text-white">Submit</button>
             </div>
         </div>
     </section>
     );
 };
 
-export default ContactUs;
+export default ContactUs; 

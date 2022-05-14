@@ -7,19 +7,19 @@ import teethImg from '../../assets/images/whitening.png'
 const Services = () => {
     const serviceInformation = [
         {
-            id: 1,
+            _id: 1,
             title: 'Fluoride Treatment',
             desc: "Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the",
             img: fluorideImg,
         },
         {
-            id: 2,
+            _id: 2,
             title: 'Cavity Filling',
             desc: "Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the",
             img: cavityImg,
         },
         {
-            id: 3,
+            _id: 3,
             title: 'Teeth Whitening',
             desc: "Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the",
             img: teethImg,
@@ -31,7 +31,7 @@ const Services = () => {
                 <h2 className='text-[#3A4256] text-4xl font-bold text-center'>Services We Provide</h2>
                 <div className='grid lg:grid-cols-3 grid-cols-1 gap-4 px-4 bg-white'>
                     {
-                        serviceInformation.map(cart => <div key={cart.id}>
+                        serviceInformation.map(cart => <div key={cart._id}>
                             <div  className='lg:px-4 py-4'>
                             <div className="card  bg-base-100 shadow-xl">
                                 <figure className="px-10 pt-10">
